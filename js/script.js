@@ -33,6 +33,7 @@ $(document).ready(function () {
         if (email == 'user@email.com' && password == 'password') {
             setTimeout(function () {
                 loading(false);
+                $('#loginForm')[0].reset();
                 alertMessage('success', 'Login success!');
             }, 2000);
         }else{
