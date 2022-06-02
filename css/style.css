@@ -1,0 +1,134 @@
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-primary{
+    color: #2B60C5 !important;
+}
+
+.bg-white{
+    background-color: #ffffff;
+}
+
+.box{
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.logo{
+    width: 60px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.btn-primary{
+    background-color: #2B60C5 !important;
+    border-radius: 0.8rem;
+    padding-top: 0.85rem;
+    padding-bottom: 0.85rem;
+    box-shadow: none !important; 
+    border: none !important;
+    transition: 0.5s !important;
+}
+
+.rounded-right {
+    border-radius: 0 0.8rem 0.8rem 0 !important;
+}
+
+.form-control{
+    box-shadow: 0 0.125rem 0.25rem rgba(202, 202, 202, 0.075) !important;
+    font-size: 14px !important;
+    transition: 0.5s;
+    font-weight: 500;
+    background-color: #f4f7fc !important;
+    box-shadow: none !important;
+    border: none;
+}
+
+.input-group-text{
+    padding-left: 1.4rem;
+    padding-right: 0.6em;
+    border: none;
+    background-color: #f4f7fc !important;
+    border-radius: 0.8rem 0 0 0.8rem;
+    background-color: transparent;
+}
+
+.show-password{
+    background-color: transparent;
+    position: absolute;
+    right: 16px;
+    top:16px;
+}
+
+.form-floating > .form-control, .form-floating > .form-control-plaintext, .form-floating > .form-select {
+    height: calc(3.2rem + 1px);
+    line-height: 1.25;
+}
+
+.form-floating > label {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    left: 0;
+    font-weight: 500;
+    height: 100%;
+    padding: 1rem 0.75rem;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.fs-14{
+    font-size: 14px;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.form-check-input:checked {
+    background-color: #2B60C5;
+    border-color: #2B60C5;
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1120px) {
+    .box{
+        width: 100%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .box{
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .box{
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .box{
+        width: 100%;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+    }
+}
+
+.swal2-popup {
+    width: 26em !important;
+    border-radius: 0.8rem !important;
+}
