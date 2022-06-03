@@ -9,14 +9,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heureuy Login Page | by Susep Supriatna</title>
     
-    <link rel="icon" href="images/logo.png" type="image/gif">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
     <div class="container-fluid">
@@ -27,18 +28,18 @@
             <div class="col-lg-5 col-md-12 col-12 bg-white vh-100 d-flex align-items-center">
                 <form class="box" id="loginForm">
                     <div class="text-center mb-4">
-                        <img src="images/logo.png" class="logo" width="60px" height="60px" alt="Logo" data-aos="fade-up" data-aos-duration="800">
+                        <img src="images/logo.png" class="logo" width="60px" height="60px" alt="Logo">
                         <h3 class="m-0 fw-semibold" data-aos="fade-up" data-aos-duration="900">Heureuy Login Page</h3>
                         <p class="fs-14 fw-normal" data-aos="fade-up" data-aos-duration="1000">Heureuy every day, every time</p>
                     </div>
-                    <div class="input-group mb-3" data-aos="fade-up" data-aos-duration="1100">
+                    <div class="input-group mb-3">
                         <span class="input-group-text"><i class="fa-solid fa-at"></i></span>
                         <div class="form-floating flex-grow-1">
                             <input type="email" class="form-control rounded-right" name="email" id="email" placeholder="Email">
                             <label for="email">Email</label>
                         </div>
                     </div>
-                    <div class="input-group mb-3" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="input-group mb-3">
                         <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
                         <div class="form-floating flex-grow-1">
                             <input type="password" class="form-control rounded-right" name="password" id="password" placeholder="Email">
@@ -46,7 +47,7 @@
                         </div>
                         <span class="show-password rounded-right fs-14 d-none" id="showPassword"></span>
                     </div>
-                    <div class="mb-5 form-check" data-aos="fade-up" data-aos-duration="1300">
+                    <div class="mb-5 form-check">
                         <div class="row">   
                             <div class="col-lg-6 col-md-12 col-12">
                                 <input type="checkbox" class="form-check-input shadow-none" id="remember">
@@ -57,7 +58,7 @@
                             </div>
                         </div>
                     </div>
-                    <div data-aos="fade-up" data-aos-duration="1400">
+                    <div>
                         <button class="btn btn-primary w-100" type="submit" id="btnLogin">
                             <span id="textLogin">Login</span>
                             <span id="spinLogin" class="d-none">
@@ -70,10 +71,9 @@
         </div>
     </div>
     
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/sweetalert2@11.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

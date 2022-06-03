@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    AOS.init();
+
     $('#btnLogin').prop('disabled', true);
 
     let email = '';
