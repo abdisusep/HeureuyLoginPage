@@ -94,10 +94,6 @@
     font-weight: 600;
 }
 
-.fw-700 {
-    font-weight: 700;
-}
-
 .opacity-0 {
     opacity: 0;
 }
@@ -105,10 +101,6 @@
 .form-check-input:checked {
     background-color: #2B60C5;
     border-color: #2B60C5;
-}
-
-.col-background {
-    background-color: #eeeeee !important;
 }
 
 .loader {
