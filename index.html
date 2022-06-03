@@ -37,17 +37,19 @@
                     <div class="input-group mb-3 animate__animated animate__fadeInDown">
                         <span class="input-group-text"><i class="fa-solid fa-at"></i></span>
                         <div class="form-floating flex-grow-1">
-                            <input type="email" class="form-control rounded-right" name="email" id="email" placeholder="Email">
+                            <input type="email" class="form-control rounded-right" name="email" id="email" placeholder="Email" oninput="isEmpty()">
                             <label for="email">Email</label>
                         </div>
                     </div>
                     <div class="input-group mb-3 animate__animated animate__fadeInDown">
                         <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
                         <div class="form-floating flex-grow-1">
-                            <input type="password" class="form-control rounded-right" name="password" id="password" placeholder="Email">
+                            <input type="password" class="form-control rounded-right" name="password" id="password" placeholder="Email" oninput="isEmpty()">
                             <label for="password">Password</label>
                         </div>
-                        <span class="show-password rounded-right fs-14 d-none" id="showPassword"></span>
+                        <span class="show-password rounded-right fs-14 d-none" id="showPassword">
+                            <i class="fa-solid fa-eye"></i>
+                        </span>
                     </div>
                     <div class="mb-5 form-check animate__animated animate__fadeInDown">
                         <div class="row">   
@@ -61,8 +63,9 @@
                         </div>
                     </div>
                     <div class="animate__animated animate__fadeInDown">
-                        <button class="btn btn-primary w-100 fw-500" type="submit" id="btnLogin">
+                        <button class="btn btn-primary w-100 fw-500" type="submit" id="btnSubmit" disabled>
                             <span id="textLogin">Login</span>
+                            <img src="https://bimtekapsi.id/images/loading.gif" class="loader d-none" width="30px" height="30px" alt="Loader">
                         </button>
                     </div>
                 </form>

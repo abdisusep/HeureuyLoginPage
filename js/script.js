@@ -1,78 +1,78 @@
-$(document).ready(function () {
-
-    $('#btnLogin').prop('disabled', true);
-
-    let email = '';
-    let password = '';
+const isEmpty = (e) => {
+    let email    = $('#email').val();
+    let password = $('#password').val();
     
-    $('#email').keyup(function() {
-        email = $(this).val();
-        checkInput();
-    });
-
-    $('#password').keyup(function () {
-        password = $(this).val();
-        password.length > 0 
-        ? $('#showPassword').removeClass('d-none') 
-        : $('#showPassword').addClass('d-none');
-        checkInput();
-    });
-
-    const checkInput = () => {
-        (email != '' && password != '') 
-        ? $('#btnLogin').prop('disabled', false) 
-        : $('#btnLogin').prop('disabled', true);
+    if (email !='' && password !='') {
+        btnSubmit(true);
+    }else{
+        btnSubmit(false);
     }
 
-    $('#loginForm').submit(function (e) {
-        e.preventDefault();
-        
-        $('#btnLogin').prop('disabled', true);
-        loading(true);
-        
-        if (email == 'user@email.com' && password == 'password') {
-            setTimeout(function () {
-                loading(false);
-                $('#loginForm').trigger('reset');
-                alertMessage('success', 'Login success!');
-            }, 2000);
-        }else{
-            setTimeout(function () {
-                loading(false);
-                $('#btnLogin').prop('disabled', false);
-                alertMessage('error', 'Login failed!');
-            }, 2000);
-        }
-    });
-
-    let showPass = false;
-    $('#showPassword').html('<i class="fa-solid fa-eye"></i>');
-    $('#showPassword').click(function () {
-        if (showPass) {
-            showPass = false;
-            $('#showPassword').html('<i class="fa-solid fa-eye"></i>');
-            $('#password').attr('type','password');
-        }else{
-            showPass = true;
-            $('#showPassword').html('<i class="fa-solid fa-eye-slash"></i>');
-            $('#password').attr('type','text');
-        }
-    });
-
-    const loading = (status) => {
-        if (status) {
-            $('#textLogin').html('Loading...');
-        }else{
-            $('#textLogin').html('Login');
-        }
+    if (password != '') {
+        $('#showPassword').removeClass('d-none');
+    }else{
+        $('#showPassword').addClass('d-none');
     }
+}
 
-    const alertMessage = (type, message) => {
-        Swal.fire({
-            icon: `${type}`,
-            html: `${message}`,
-            showConfirmButton: false,
-            timer: 2400
-        })
+let showPass = false;
+$('#showPassword').click(function () {
+    if (showPass) {
+        showPass = false;
+        $('#showPassword').html('<i class="fa-solid fa-eye"></i>');
+        $('#password').attr('type','password');
+    }else{
+        showPass = true;
+        $('#showPassword').html('<i class="fa-solid fa-eye-slash"></i>');
+        $('#password').attr('type','text');
+    }
+});
+
+const btnSubmit = (value) => {
+    if (value) {
+        $('#btnSubmit').removeAttr('disabled');
+    }else{
+        $('#btnSubmit').attr('disabled', true);
+    }
+}
+
+const Loading = (value) => {
+    if (value) {
+        btnSubmit(false);
+        $('#textLogin').addClass('text-primary');
+        $('.loader').removeClass('d-none');
+    }else{
+        btnSubmit(true);
+        $('#textLogin').removeClass('text-primary');
+        $('.loader').addClass('d-none');
+    }
+}
+
+const alertMessage = (type, message) => {
+    Swal.fire({
+        icon: `${type}`,
+        html: `${message}`,
+        showConfirmButton: false,
+        timer: 2400
+    })
+}
+
+$('#loginForm').submit(function (e) {
+    e.preventDefault();
+    Loading(true);
+
+    let email    = $('#email').val();
+    let password = $('#password').val();
+    if (email == 'user@email.com' && password == 'password') {
+        setTimeout(function () {
+            Loading(false);
+            $('#loginForm').trigger('reset');
+            alertMessage('success', 'Login success!');
+        }, 2000);
+    }else{
+        setTimeout(function () {
+            Loading(false);
+            alertMessage('error', 'Login failed!');
+        }, 2000);
     }
 });
