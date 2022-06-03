@@ -61,11 +61,9 @@ $(document).ready(function () {
 
     const loading = (status) => {
         if (status) {
-            $('#textLogin').addClass('opacity-0');
-            $('#spinLogin').removeClass('d-none');
+            $('#textLogin').html('Loading...');
         }else{
-            $('#textLogin').removeClass('opacity-0');
-            $('#spinLogin').addClass('d-none');
+            $('#textLogin').html('Login');
         }
     }
 
