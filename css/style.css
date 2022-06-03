@@ -99,6 +99,11 @@
     background-color: #eeeeee !important;
 }
 
+.loader {
+    position: absolute; 
+    margin-left: -40px; 
+    margin-top: -3px;
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1120px) {
     .box{

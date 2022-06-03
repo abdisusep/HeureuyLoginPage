@@ -7,7 +7,7 @@
     <meta name="keywords" content="HTML, CSS, JavaScript, Login, Form, Bootstrap, JQuery, SweetAlert, AOS">
     <meta name="author" content="Susep Supriatna">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heureuy Login Page | by SS20</title>
+    <title>Heureuy Login Page | by Susep Supriatna</title>
     
     <link rel="icon" href="images/logo.png" type="image/gif">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,9 +27,9 @@
             <div class="col-lg-5 col-md-12 col-12 bg-white vh-100 d-flex align-items-center">
                 <form class="box" id="loginForm">
                     <div class="text-center mb-4">
-                        <img src="images/logo.png" class="logo" alt="Logo" data-aos="fade-up" data-aos-duration="800">
-                        <h3 class="m-0" style="font-weight: 600;" data-aos="fade-up" data-aos-duration="900">Heureuy Login Page</h3>
-                        <p class="fs-14" style="font-weight: 500;" data-aos="fade-up" data-aos-duration="1000">Heureuy every day, every time</p>
+                        <img src="images/logo.png" class="logo" width="60px" height="60px" alt="Logo" data-aos="fade-up" data-aos-duration="800">
+                        <h3 class="m-0 fw-semibold" data-aos="fade-up" data-aos-duration="900">Heureuy Login Page</h3>
+                        <p class="fs-14 fw-normal" data-aos="fade-up" data-aos-duration="1000">Heureuy every day, every time</p>
                     </div>
                     <div class="input-group mb-3" data-aos="fade-up" data-aos-duration="1100">
                         <span class="input-group-text"><i class="fa-solid fa-at"></i></span>
@@ -50,17 +50,19 @@
                         <div class="row">   
                             <div class="col-lg-6 col-md-12 col-12">
                                 <input type="checkbox" class="form-check-input shadow-none" id="remember">
-                                <label class="form-check-label fs-14" for="remember" style="font-weight: 500;">Remember me</label>
+                                <label class="form-check-label fs-14 fw-normal" for="remember">Remember me</label>
                             </div>
                             <div class="col-lg-6 col-md-12 col-12 text-lg-end">
-                                <a href="#" class="text-decoration-none text-primary fs-14" style="font-weight: 500;">Forgot password?</a>
+                                <a href="#" class="text-decoration-none text-primary fs-14 fw-normal">Forgot password?</a>
                             </div>
                         </div>
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1400">
                         <button class="btn btn-primary w-100" type="submit" id="btnLogin">
                             <span id="textLogin">Login</span>
-                            <span id="spinLogin" class="d-none"><img src="images/loader.gif" width="30" alt="loader" style="position: absolute; margin-left: -40px; margin-top: -3px;"></span>
+                            <span id="spinLogin" class="d-none">
+                                <img src="images/loader.gif" class="loader" width="30" height="30" alt="loader">
+                            </span>
                         </button>
                     </div>
                 </form>
