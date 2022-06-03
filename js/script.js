@@ -67,6 +67,7 @@ $('#loginForm').submit(function (e) {
         setTimeout(function () {
             Loading(false);
             $('#loginForm').trigger('reset');
+            $('#showPassword').addClass('d-none');
             alertMessage('success', 'Login success!');
         }, 2000);
     }else{
