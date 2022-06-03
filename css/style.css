@@ -103,6 +103,10 @@
     border-color: #2B60C5;
 }
 
+.col-background {
+    background-color: #f8f9fa !important;
+}
+
 .loader {
     position: absolute; 
     margin-left: -40px; 
